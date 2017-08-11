@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon search</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body background=img/background.png>
+<div id="wrapp" ng-controller="mainCtrl">
+	
+	<header>
+		<img src="img/logo.png" alt="logo">
+
+		<div>
+			<input id="search" type="search" placeholder="Enter Pokemon..." ng-model="pokemon">
+			<input id="btn" type="button" value="Find" ng-click=findPoks()>
+		</div>
+	</header>
+
+	<article ng-controller="mainCtrl">
+		<section id="pokByName" ng-show="pokByName">
+			<h1>NAME: {{pokemonsName.name}}</h1>
+			<img src="{{pokemonsName.img1}}" alt="">
+			<img src="{{pokemonsName.img2}}" alt="">
+			<img src="{{pokemonsName.img3}}" alt="">
+			<img src="{{pokemonsName.img4}}" alt="">
+			<table>
+				<ul>
+					<li>ID: <span>{{pokemonsName.id}}</span></li>
+					<li>BASE EXPERIENCE: <span>{{pokemonsName.baseExperience}}<span></li>
+					<li>ORDER: <span>{{pokemonsName.order}}</span></li>
+					<li>WEIGHT: <span>{{pokemonsName.weight}}</span></li>
+					<li>HEIGHT: <span>{{pokemonsName.height}}</span></li>
+				</ul>
+			</table>
+		</section>
+	</article>
+
+	<article>
+		<section id="pokByColor" ng-show="pokByColor">
+			<h1>POKEMON COLOR: {{pokemonsColor.name}}</h1>
+			<table>
+				<ul>
+					<li ng-repeat="pokemons in pokemonsColor.species | orderBy: ASC">
+						<button id="speciesBtn" type="button" ng-click=showPoks()><span>{{$index+1}}</span> {{pokemons}}</button>
+					</li>
+				</ul>
+			</table>
+		</section>
+	</article>
+
+</div>
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script src="function.js"></script> -->
+</body>
+</html>

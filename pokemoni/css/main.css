@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: pokemon; 
+	letter-spacing: 2px;
+}
+@font-face{
+    font-family: pokemon;
+    src: url(../fonts/PokemonSolid.ttf);
+}
+#wrapp{
+	margin: 0 auto;
+	width: 1200px;
+}
+header{
+	width: 50%;
+	margin: 0 auto;
+}
+header img{
+	width: 500px;
+	height: 160px;
+	margin: 0 auto;
+	margin:0 auto;
+	display: block;
+}
+header div{
+	width: 100%;
+	margin: 10px;
+	text-align: center;
+	margin-left: 30px;
+}
+header div input:first-child{
+	margin-left: 85px;
+	width: 375px;
+  	height: 40px;
+  	font-size: 15px;
+  	border: 1px solid black;
+  	border-radius: 3px;
+  	/*box-shadow: 2px 2px 2px gray;*/
+  	padding-left: 15px;
+  	padding-bottom: 10px;
+  	font-family: pokemon;
+  	color: black;
+  	/*text-shadow: 1px 0 0 rgb(89, 179, 0);*/
+  	letter-spacing: 2px;
+  	background: rgba(0, 204, 255, 0);
+}
+#btn{
+	width: 100px;
+	height: 15px;
+	font-family: pokemon;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-bottom: 55px;
+	background: rgba(0, 204, 255, 0);
+	border: none;
+	color: black;
+}
+#btn:hover{
+	cursor: pointer;
+	background: rgba(0, 204, 255, 0.1);
+	color: white;
+}
+article section img{
+	width: 100px;
+	height: 100px;
+}
+#speciesBtn{
+	font-family: pokemon;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+#pokByColor li{
+	display: inline;
+	padding-left: 20px;
+	background: rgba(0, 204, 255, 0.1);
+}
+#pokByColor li button{
+	letter-spacing: 5px;
+	background: rgba(0, 204, 255, 0.1);
+}
+article{
+	text-shadow: 1px 1px 1px green;	
+}
+span{
+	color: white;
+	text-shadow: 2px 2px 2px green;	
+}
